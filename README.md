@@ -4,7 +4,7 @@ Small pomodoro timer project for my dad.
 Flashes the screen red and plays a little melody when a phase ends.
 
 ### Prerequisites
-Python installed on system
+[Python](https://www.python.org/downloads/) installed on system.
 
 ### How to use
 - Run `pomodoro.bat` to start the timer!
