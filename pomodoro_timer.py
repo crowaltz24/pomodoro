@@ -29,7 +29,7 @@ def flash_screen(current_phase, next_phase):
     message = f"POMODORO {current_phase} ended, next is {next_phase}"
     label = Label(root, text=message, font=("Arial", 24), fg="white", bg="red")
     label.pack(expand=True)
-    root.after(1000, root.destroy)
+    root.after(2000, root.destroy)
     root.mainloop()
 
 def play_sound():
