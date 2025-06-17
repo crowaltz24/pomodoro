@@ -7,6 +7,7 @@ Flashes the screen red and plays a little melody when a phase ends.
 [Python](https://www.python.org/downloads/) installed on system.
 
 ### How to use
+- Download all the files, and place them in a folder together.
 - Run `pomodoro.bat` to start the timer!
 - Edit the `config.json` file (in notepad) to change durations of the phases, or to enable/disable screen flash and sound. Restart after editing.
 
