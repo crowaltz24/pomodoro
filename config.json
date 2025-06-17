@@ -1,0 +1,10 @@
+{
+    "work_duration": 25,
+    "short_break_duration": 5,
+    "long_break_duration": 15,
+
+    "order": ["work", "short_break", "work", "long_break"],
+
+    "play_sound": true,
+    "flash_screen": true
+}
