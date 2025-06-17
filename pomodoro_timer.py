@@ -1,8 +1,7 @@
 import json
 import time
 import winsound
-from tkinter import Tk
-import pygetwindow as gw
+from tkinter import Tk, Label
 
 def load_config():
     default_config = {
@@ -22,17 +21,13 @@ def load_config():
         return default_config
 
 def flash_screen(current_phase, next_phase):
-    # minimize all windows
-    for window in gw.getAllWindows():
-        if not window.isMinimized:
-            window.minimize()
-    
     # flash red page with message
     root = Tk()
     root.attributes("-fullscreen", True)
+    root.attributes("-topmost", True)  # ENSURES WINDOW IS TOPMOST (can remove pygetwindow)
     root.configure(bg="red")
     message = f"POMODORO {current_phase} ended, next is {next_phase}"
-    label = Tk.Label(root, text=message, font=("Arial", 24), fg="white", bg="red")
+    label = Label(root, text=message, font=("Arial", 24), fg="white", bg="red")
     label.pack(expand=True)
     root.after(1000, root.destroy)
     root.mainloop()
